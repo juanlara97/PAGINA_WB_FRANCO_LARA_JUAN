@@ -39,7 +39,9 @@
         background-color: antiquewhite;
     }
     body {
-        background-image: url(herramienta.jpg);
+        background-image: url(bus.jpg);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
     }
