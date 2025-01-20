@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        #uno, #dos {
+            font-family: "Arial", serif;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        h1  {
+            font-size: 25px;
+            color: brown;
+            font-family: "Arial", serif;
+        }
+        legend {
+            font-size: x-large;
+            font-family: "Arial";
+            font-weight: bold;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <form action="formulario.php" method="post"><h1>Formulario de información</h1>
+    <fieldset>
+        <div id="uno">
+            <legend>Sus datos</legend>
+        <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" size="50" name="nombre">
+        <br>
+        <label for="contraseña">Contraseña:</label>
+            <input type="text" maxlength="8" name="contraseña">
+        <br>
+        <label for="usuario">Usuario:</label>
+            <input type="text" value="Anónimo" disabled name="usuario">
+        <br>
+        Nivel:
+        <br>
+        <label for="profesional">Profesional</label>
+            <input type="radio" name="profesional">
+        <br>
+        <label for="avanzado">Avanzado</label>
+            <input type="radio" checked name="avanzado">
+        <br>
+        <label for="principiante">Principiante</label>
+            <input type="radio" name="principiante">
+        </div>
+        
+    </fieldset>
+        <br>
+        <div id="dos">
+            Nacionalidad: <select name="nacionalidad" id="nc">
+                <option value="esp">Española</option>
+                <option value="col">Colombiana</option>
+            </select>
+            <br>
+            Descripción: <textarea name="" id=""></textarea>
+            <br>
+            <label for="deseo"><input type="checkbox" name="deseo" id="deseo" checked>
+            Deseo recibir información sobre novedades y ofertas
+            </label>
+            <br>
+            <label for="declaro">
+                <input type="checkbox" name="declaro" id="declaro"> 
+                Declaro haber leído y aceptado los condiiciones generales del programa y la normativa sobre protección de datos
+            </label>
+            <br>
+            <label for="archivo">Adjuntar foto: 
+                <input type="file" name="archivo">
+            </label>
+            <br>
+        </div>
+        <label for="enviar"><input type="submit" name="enviar"></label>
+            <label for="borrar"><input type="reset" value="Borrar todo" name="borrar"></label>
+        </form>
+    <a href="index.html">Volver a la pagina principal</a>
+</body>
+</html>
